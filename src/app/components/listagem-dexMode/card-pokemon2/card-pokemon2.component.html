@@ -1,0 +1,16 @@
+<div class="app-card-pokemon card d-flex flex-row">
+        <a
+        class="stretched-link"
+        [title]="['Pesquisar '+ pokemon2?.name]"
+        [routerLink]="['/detalhes',pokemon2?.id]">
+      </a>
+        <div class="card-header text-center">
+          <label class="card-title text-white-50 fs-3">{{pokemon2?.name}}</label>
+
+
+        </div>
+        <div class="d-flex w-75 justify-content-end">
+          <img class="app-img-pokemon" [src]="pokemon2?.sprites"
+            alt="{{pokemon2?.name +' image'}}">
+        </div>
+      </div>
