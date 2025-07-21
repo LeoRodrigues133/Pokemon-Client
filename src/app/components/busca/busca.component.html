@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-center">
+  <input
+  #Busca
+  (input)="Buscar(Busca.value)"
+  type="text" placeholder="buscar pokemon..." class="col-8 rounded-start">
+
+  <button
+  (click)="Buscar(Busca.value)"
+  class="btn btn-outline-secondary rounded-start-0 rounded-end">Buscar</button>
+</div>

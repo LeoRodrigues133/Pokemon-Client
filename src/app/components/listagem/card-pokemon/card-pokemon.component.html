@@ -1,0 +1,23 @@
+<div class="app-card-pokemon card">
+  <a class="stretched-link z-0" [title]="['Pesquisar '+ pokemon?.name]" [routerLink]="['/detalhes',pokemon?.id]">
+  </a>
+  <div class="card-header text-center">
+    <button title="Favoritar {{pokemon?.name}}" (click)="onFavoritarPokemon(pokemon!)"
+      class="border-0 app-fav-icon z-1">
+      <i class="" [ngClass]="{
+          'bi bi-star':!pokemon?.isFavorito,
+          'bi bi-star-fill text-warning': pokemon?.isFavorito}"></i>
+    </button>
+
+    <label class="card-title">{{pokemon?.name}}</label>
+
+    <div class="d-flex justify-content-center gap-2">
+      <span *ngFor="let type of pokemon?.types" [ngClass]="backgroundColor[type.name]"
+        class="border border-1 border-dark-subtle px-2 rounded-pill text-center">{{type.name}}</span>
+    </div>
+
+  </div>
+  <div class="card-body d-flex justify-content-center">
+    <img class="img-fluid app-img-pokemon card-img-bottom" [src]="pokemon?.sprites" alt="{{pokemon?.name +' image'}}">
+  </div>
+</div>
