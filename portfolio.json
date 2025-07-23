@@ -1,5 +1,6 @@
 {
     "title": "Pokedex Client Angular",
     "description": "Projeto de pokedex que todo programador cria quando está aprendendo Frontend e Api.",
-    "gif": "https://raw.githubusercontent.com/LeoRodrigues133/Pokemon-Client/refs/heads/master/public/Apresentacao.gif"
+    "gif": "https://raw.githubusercontent.com/LeoRodrigues133/Pokemon-Client/refs/heads/master/public/Apresentacao.gif",
+    "lastCommit": "Adicionado gif"
 }
